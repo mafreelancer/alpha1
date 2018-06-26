@@ -1,0 +1,118 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+legend {
+  color: #000;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: 'webfont';
+  src: url('//at.alicdn.com/t/9fooeparw3sj1yvi.eot');
+  /* IE9*/
+  src: url('//at.alicdn.com/t/9fooeparw3sj1yvi.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('//at.alicdn.com/t/9fooeparw3sj1yvi.woff') format('woff'), /* chromeÃ£â‚¬Âfirefox */ url('//at.alicdn.com/t/9fooeparw3sj1yvi.ttf') format('truetype'), /* chromeÃ£â‚¬ÂfirefoxÃ£â‚¬ÂoperaÃ£â‚¬ÂSafari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/9fooeparw3sj1yvi.svg#NotoSansHans-DemiLight') format('svg');
+  /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.font.im/s/lato/v14/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+}
+html,
+body {
+  width: 100%;
+  min-width: 1220px;
+  font-family: 'Roboto', 'Lato', sans-serif, 'webfont', "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜", "Hiragino Sans GB", "Ã¥â€ Â¬Ã©Ââ€™Ã©Â»â€˜Ã¤Â½â€œ", "Source Han Sans us Regular", Arial, "Helvetica", "Microsoft YaHei New", "Microsoft Yahei", "Ã¥Â¾Â®Ã¨Â½Â¯Ã©â€ºâ€¦Ã©Â»â€˜", "STXihei", "Ã¥ÂÅ½Ã¦â€“â€¡Ã§Â»â€ Ã©Â»â€˜", 'sans-serif';
+  font-size: 16px;
+  border-top: 1px solid transparent;
+}
