@@ -25,17 +25,21 @@ body {
   border-top: 1px solid transparent;
 }
 
+
+
 #part1 .moveMsg h2, #part2 .moveMsg h2, #part3 .moveMsg h2, #part4 .moveMsg h2, #part5 .moveMsg h2, #part6 .moveMsg h2, #part7 .moveMsg h2, #part8 .moveMsg h2, #part9 .moveMsg h2, #part10 .moveMsg h2, #part11 .moveMsg h2, #part12 .moveMsg h2, #part13 .moveMsg h2, #part14 .moveMsg h2 {
-  font-size: 48px;
+  font-size: 3em;
   color: #333;
   font-weight: 300;
-  line-height: 70px;
+  line-height: 1em;
+  text-align: center;
 }
 
 #part1 .moveMsg p, #part2 .moveMsg p, #part3 .moveMsg p, #part4 .moveMsg p, #part5 .moveMsg p, #part6 .moveMsg p, #part7 .moveMsg p, #part8 .moveMsg p, #part9 .moveMsg p, #part10 .moveMsg p, #part11 .moveMsg p, #part12 .moveMsg p, #part13 .moveMsg p, #part14 .moveMsg p {
   font-size: 16px;
   color: #666;
   line-height: 30px;
+  text-align: justify;
 }
 
 
@@ -46,15 +50,15 @@ body {
   }
   & .moveMsg {
     & h2 {
-      font-size: 60px;
+      font-size: 4em;
       color: #fff;
-      line-height: 80px;
+      line-height: 1em;
     }
     & h4 {
-      font-size: 24px;
+      font-size: 1.5em;
       color: #666;
       font-weight: 300;
-      line-height: 54px;
+      line-height: 1.5em;
     }
     & p {
       font-size: 18px;
@@ -63,8 +67,17 @@ body {
     }
   }
 
+  & .buyCard {
+    color: #FFFFFF;
+  }
+
   & .nav-link {
     font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+    background: #008edb;
+    color: #FFFFFF;
   }
 }
 
@@ -333,7 +346,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
+  left: 33px;
   top: 0;
   opacity: 0;
 }
@@ -561,11 +574,13 @@ body {
     background-position: 0 0;
     height: 42px;
   }
+
+
 }
 #part10 {
   background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro10.jpg?1240079…) no-repeat center;
   background-size: cover;
-  padding: 50px 0 600px;
+  padding: 50px 0 50px;
 
   & .msgIcon span {
     width: 148px;
@@ -585,6 +600,10 @@ body {
     background-position: 0 -1918px;
   }
 
+  & .legend--min {
+    width: 100%;
+    height: 100%;
+  }
 }
 #part12 {
   background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro12-7.png?1240079…) no-repeat center;
@@ -596,7 +615,6 @@ body {
     width: 122px;
     height: 61px;
     display: inline-block;
-    margin-right: 60px;
     text-align: center;
     background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1proIcon.png?12400798506024755519);
     background-position: 0 -1805px;
@@ -617,9 +635,13 @@ body {
     }
     &__item3 {
       background: url("../img/alpha1pro12-3.png");
+      max-width: calc(50% - 5px);
+      margin-right: 5px;
     }
     &__item4 {
       background: url("../img/alpha1pro12-4.png");
+      max-width: calc(50% - 5px);
+      margin-left: 5px;
     }
     &__item5 {
       background: url("../img/alpha1pro12-5.png");
@@ -633,6 +655,7 @@ body {
       height: 195px;
       background-position: center;
       background-size: cover;
+      margin-bottom: 10px;
     }
   }
 }
@@ -685,12 +708,19 @@ body {
     width: 9px;
   }
   & .standard .msgTitle {
-    width: 160px;
+    width: 120px;
     font-weight: 600;
   }
   & .standard .msgMessage {
     vertical-align: middle;
     line-height: normal;
+  }
+}
+
+
+#part2,  #part5,  #part8 {
+  & h2, & p {
+    color: #FFFFFF!important;
   }
 }
 
