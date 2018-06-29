@@ -24,7 +24,29 @@ body {
   font-size: 16px;
   border-top: 1px solid transparent;
 }
+#alphaNav {
+  background: #000000;
+  padding: 15px 0;
+}
+.alphaMenu {
 
+  &__item {
+    margin-left: 30px;
+  }
+}
+
+.imgBg {
+  height: 100%;
+}
+
+#part1, #part2, #part3, #part4, #part5, #part6, #part7, #part8, #part9, #part10, #part11, #part12, #part13, #part14 {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  & .row {
+    position: relative;
+  }
+}
 
 
 #part1 .moveMsg h2, #part2 .moveMsg h2, #part3 .moveMsg h2, #part4 .moveMsg h2, #part5 .moveMsg h2, #part6 .moveMsg h2, #part7 .moveMsg h2, #part8 .moveMsg h2, #part9 .moveMsg h2, #part10 .moveMsg h2, #part11 .moveMsg h2, #part12 .moveMsg h2, #part13 .moveMsg h2, #part14 .moveMsg h2 {
@@ -33,6 +55,7 @@ body {
   font-weight: 300;
   line-height: 1em;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 #part1 .moveMsg p, #part2 .moveMsg p, #part3 .moveMsg p, #part4 .moveMsg p, #part5 .moveMsg p, #part6 .moveMsg p, #part7 .moveMsg p, #part8 .moveMsg p, #part9 .moveMsg p, #part10 .moveMsg p, #part11 .moveMsg p, #part12 .moveMsg p, #part13 .moveMsg p, #part14 .moveMsg p {
@@ -44,10 +67,9 @@ body {
 
 
 #part1 {
-  background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro1-1.jpg?1240079…) no-repeat center;
-  & .robot {
-    background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro1-2.png?12400798506024755519) no-repeat bottom
-  }
+  background-image: url(https://static.ubtechrobots.ru/ubtechrobots/alpha/alpha1pro1-2.png);
+
+
   & .moveMsg {
     & h2 {
       font-size: 4em;
@@ -71,6 +93,16 @@ body {
     color: #FFFFFF;
   }
 
+  & .close {
+    background: url("../img/close.svg");
+    position: relative;
+    top: 21px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+  }
+
   & .nav-link {
     font-size: 1rem;
     margin-left: auto;
@@ -82,7 +114,7 @@ body {
 }
 
 #part2 {
-  background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro2-1.jpg?1240079…) no-repeat center;
+  background: url(https://static.ubtechrobots.ru/ubtechrobots/alpha/alpha1pro2-1.jpg) no-repeat center;
   & h2 {
     color: #fff;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -122,8 +154,9 @@ body {
 }
 
 #part3 {
-  background: #e9e9e9 url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro3-1.jpg?1240079…) no-repeat center;
-  background-size: cover;
+  background: #e9e9e9; //url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro3-1.jpg?1240079…) no-repeat center;
+  //background-size: cover;
+  padding: 50px 0 0;
 }
 #part4 {
   background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro4-2.png?1240079…), url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro4-1.jpg?1240079…);
@@ -177,6 +210,10 @@ body {
 #part6 {
   background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro6-1.jpg?1240079…) no-repeat;
   background-size: cover;
+  & .moveMsg h2, & .moveMsg p {
+    color: #FFFFFF;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
 }
 #part7 {
   background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro7-5.png?1240079…) no-repeat center;
@@ -535,10 +572,6 @@ body {
 
 
 #part9 {
-  padding: 50px 0 600px;
-  background: url('../img/alpha1pro9-5-min.jpg') no-repeat, #fcfcfc;
-  background-size: 320px;
-  background-position: bottom;
   & .moveIcon li {
     text-align: center;
     display: inline-block;
@@ -578,9 +611,9 @@ body {
 
 }
 #part10 {
-  background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro10.jpg?1240079…) no-repeat center;
-  background-size: cover;
-  padding: 50px 0 50px;
+
+  background: url("https://cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro10.jpg?12400798506024755519");
+
 
   & .msgIcon span {
     width: 148px;
@@ -591,13 +624,13 @@ body {
     background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1proIcon.png?12400798506024755519) no-repeat;
   }
   & .msgIcon .msg1 {
-    background-position: 0 -1866px;
+    background-position: 9px -1866px;
   }
   & .msgIcon .msg2 {
     background-position: 0 -1970px;
   }
   & .msgIcon .msg3 {
-    background-position: 0 -1918px;
+    background-position: 12px -1918px;
   }
 
   & .legend--min {
@@ -605,60 +638,165 @@ body {
     height: 100%;
   }
 }
+
+
+#part10 .legend {
+  width: 100%;
+  height: 414px;
+  top: 360px;
+  left: 50%;
+  margin-left: -610px;
+  position: absolute;
+}
+#part10 .legend div {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+}
+#part10 .legend .legend1 {
+  width: 301px;
+  left: 198px;
+  background: url(https://static.ubtechrobots.ru/ubtechrobots/alpha/inventor31.png) no-repeat center;
+}
+#part10 .legend .legend2 {
+  width: 298px;
+  left: 424px;
+  background: url(https://static.ubtechrobots.ru/ubtechrobots/alpha/inventor32.png) no-repeat center;
+}
+#part10 .legend .legend3 {
+  width: 225px;
+  left: 722px;
+  background: url(https://static.ubtechrobots.ru/ubtechrobots/alpha/inventor33.png) no-repeat center;
+}
+#part10 .legend .legend4 {
+  width: 131px;
+  left: 934px;
+  background: url(https://static.ubtechrobots.ru/ubtechrobots/alpha/inventor34.png) no-repeat center;
+}
+#part10.active .legend .legend1 {
+  opacity: 1;
+  left: 154px;
+  -webkit-transition: all 1.4s .6s;
+  -o-transition: all 1.4s .6s;
+  -moz-transition: all 1.4s .6s;
+  transition: all 1.4s .6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#part10.active .legend .legend2 {
+  opacity: 1;
+  left: 382px;
+  -webkit-transition: all 1.4s .4s;
+  -o-transition: all 1.4s .4s;
+  -moz-transition: all 1.4s .4s;
+  transition: all 1.4s .4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#part10.active .legend .legend3 {
+  opacity: 1;
+  left: 680px;
+  -webkit-transition: all 1.4s .2s;
+  -o-transition: all 1.4s .2s;
+  -moz-transition: all 1.4s .2s;
+  transition: all 1.4s .2s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#part10.active .legend .legend4 {
+  opacity: 1;
+  left: 934px;
+  -webkit-transition: all 1.4s;
+  -o-transition: all 1.4s;
+  -moz-transition: all 1.4s;
+  transition: all 1.4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+
 #part12 {
-  background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro12-7.png?1240079…) no-repeat center;
-  background-size: cover;
+  background-color: #000000;
+  & .List {
+    padding: 40px 0;
+    & .part1, & .part2, & .part3 {
 
-  & .msgIcon span {
-    color: #5aaef5;
-    font-size: 60px;
-    width: 122px;
-    height: 61px;
-    display: inline-block;
-    text-align: center;
-    background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1proIcon.png?12400798506024755519);
-    background-position: 0 -1805px;
-  }
-  & .msgIcon .msgSpan2 {
-    width: 249px ;
-    margin-right: 0 ;
-    background-position: 0 -2022px;
-  }
-
-
-  & .imgGroup {
-    &__item1 {
-      background: url("../img/alpha1pro12-1.png");
     }
-    &__item2 {
-      background: url("../img/alpha1pro12-2.png");
+    & .img1, & .img2, & .img3, & .img4, & .img5, & .img6 {
+      & div {
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: all .5s;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     }
-    &__item3 {
-      background: url("../img/alpha1pro12-3.png");
-      max-width: calc(50% - 5px);
-      margin-right: 5px;
+    & .img1 {
+      height: 135px;
+      margin-bottom: 15px;
+      & div {
+        background-image: url("https://static.ubtechrobots.ru/ubtechrobots/alpha/alpha1pro12-1.png");
+      }
     }
-    &__item4 {
-      background: url("../img/alpha1pro12-4.png");
-      max-width: calc(50% - 5px);
-      margin-left: 5px;
+    & .img2 {
+      height: 435px;
+      margin-top: 15px;
+      & div {
+        background-image: url("https://static.ubtechrobots.ru/ubtechrobots/alpha/alpha1pro12-2.png");
+      }
     }
-    &__item5 {
-      background: url("../img/alpha1pro12-5.png");
+    & .img3 {
+      height: 600px;
+      & div {
+        background-image: url("https://static.ubtechrobots.ru/ubtechrobots/alpha/alpha1pro12-3.png");
+      }
     }
-    &__item6 {
-      background: url("../img/alpha1pro12-6.png");
+    & .img4 {
+      height: 285px;
+      margin-bottom: 15px;
+      & div {
+        background-image: url("https://static.ubtechrobots.ru/ubtechrobots/alpha/alpha1pro12-4.png");
+      }
     }
-
-    & div {
-      background-repeat: no-repeat;
-      height: 195px;
-      background-position: center;
-      background-size: cover;
-      margin-bottom: 10px;
+    & .img5 {
+      height: 285px;
+      margin-top: 15px;
+      & div {
+        background-image: url("https://static.ubtechrobots.ru/ubtechrobots/alpha/alpha1pro12-5.png");
+      }
+    }
+    & .img6 {
+      height: 285px;
+      margin-top: 15px;
+      & div {
+        background-image: url("https://static.ubtechrobots.ru/ubtechrobots/alpha/alpha1pro12-6.png");
+      }
     }
   }
 }
+
 #part14 {
   background: url(//cdn.shopify.com/s/files/1/2265/4045/files/alpha1pro14-2.png?1240079…) no-repeat center;
   background-size: cover;
@@ -677,7 +815,6 @@ body {
   }
 
   & .standard ul {
-    margin-top: 108px;
     display: block;
     border-top: 1px dashed #dedede;
   }
@@ -1167,8 +1304,17 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   #part8 .robot .robot2 .robotList {
+    & .robotL1 {
+      background-size: contain;
+    }
+    & .robotL2 {
+      background-size: contain;
+    }
+    & .robotL3 {
+      background-size: contain;
+    }
     & .robotL4 {
       background-size: 90% !important;
       background-position: 30 100px;
@@ -1180,3 +1326,114 @@ body {
   }
 
 }
+
+@media (max-width: 768px) {
+
+
+  #part1 {
+    background-image: url(https://static.ubtechrobots.ru/ubtechrobots/alpha/alpha1pro1-2.png);
+    background-size: 250px;
+    background-color: #000000;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 270px 0 10px;
+
+    & .container:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #e9e9e9;
+    }
+  }
+
+  #part10 {
+    & .legend {
+      display: none;
+    }
+  }
+}
+@media (min-width: 576px) {
+  #part5 {
+    padding: 50px 0 280px;
+    background-size: 485px, cover;
+  }
+
+  #part7 {
+    padding: 50px 0 290px;
+  }
+  #part8 {
+    .moveIcon ul {
+      height: 100%;
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .imgBg {
+    display: none;
+  }
+
+  #part1 {
+    padding: 50px 0 0;
+    & .robot {
+      position: absolute;
+      background-position: center bottom;
+      bottom: 0;
+      height: 340px;
+      &::after {
+        position: static;
+      }
+    }
+  }
+
+  #part2 {
+    padding: 160px 0;
+  }
+
+  #part4 {
+    background-size: 300px, cover;
+    background-position: 75% 50%, top;
+    background-repeat: no-repeat;
+    padding: 160px 0;
+  }
+
+  #part6 {
+    padding: 160px 0;
+  }
+
+  #part7 {
+    padding: 160px 0;
+    background-position: 75% 50%;
+    & .moveIcon .iconCom {
+      display: block;
+    }
+  }
+
+
+
+  #part8 .robot {
+    position: absolute;
+  }
+  .moveIcon {
+    padding: 60px 0px;
+  }
+
+  #part10 {
+    padding-top: 50px;
+    padding-bottom: 600px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  #part8 .moveIcon {
+    padding: 130px 0px;
+  }
+}
+
+
